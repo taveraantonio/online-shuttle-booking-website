@@ -1,0 +1,106 @@
+ div.outertablediv {					/*div that contains table*/
+   display: block;
+   margin: auto;
+   padding:5px;
+   width: 80%;
+
+}
+
+.outertablediv h3 {						/*style of the h3 element inside outertablediv*/
+   color: #f44336;
+   text-align: center; 
+   font-size: 30px;
+   font-weight: 400;
+}
+
+.innertablediv{							/*style of the table*/
+   background: white;
+   overflow: auto;
+   border-radius: 3px;
+   height: 320px;
+   margin: auto;
+   padding: 0px;
+   width: 80%;
+   box-shadow: 1px 3px 12px #888888;
+   border-spacing: 0;
+   
+}
+
+h4 {									/*style the h4 element*/
+   text-align: justify; 
+}
+ 
+th {									/*style of the table header*/
+   color:#ffffff;
+   background: #f44336;
+   opacity: 0.9;
+   border-bottom:4px solid #C93E3E;
+   border-right: 1px solid #BF5252;
+   font-size:23px;
+   font-weight: 100;
+   padding:24px;
+   text-align:left;
+   vertical-align:middle;
+}
+
+th:first-child {						/*style the border radius of the left header element*/
+   border-top-left-radius:3px;
+}
+ 
+th:last-child {							/*style the border radius of the right header element*/
+   border-top-right-radius:3px;
+   border-right:none;
+}
+  
+tr {									/*style of the table rows*/
+   border-top: 1px solid #C1C3D1;				
+   border-bottom:1px solid #C1C3D1;
+   color:#666B85;
+   font-size:16px;
+   font-weight:normal;
+}
+ 
+tr:hover td {							/*style of tables row hover*/
+   background:#EF5151;
+   color:#FFFFFF;
+}
+ 
+tr:first-child {						/*style of the first tr*/
+   border-top:none;
+} 
+
+tr:last-child {							/*style of the last tr*/
+   border-bottom:none;
+}
+ 
+tr:nth-child(odd) td {					/*specify a background color for every element that is the second child of its parent, only the odd*/
+   background:#F4F4F4;
+}
+ 
+tr:nth-child(odd):hover td {			/*style the over for the odd*/
+   background:#EF5151;
+}
+
+tr:last-child td:first-child {			/*style the radius of the last row, first cell*/
+   border-bottom-left-radius:3px;
+}
+ 
+tr:last-child td:last-child {			/*style the radius of the last row, last cell*/
+   border-bottom-right-radius:3px;
+}
+ 
+td {									/*style of the cells*/
+   background:#FFFFFF;
+   padding:20px;
+   text-align:left;
+   vertical-align:middle;
+   font-weight:300;
+   font-size:18px;
+   text-align: left;
+   border-right: 1px solid #C1C3D1;
+}
+
+td:last-child {							/*style of the last cell for each row*/
+   border-right: 0px;
+}
+

@@ -1,0 +1,210 @@
+ body, html {								/*general style of all the website*/
+    min-width:800px;						/*min width for modern broswer*/
+    width: auto !important;					/*width for modern browser*/
+    width:800px;							/*width for old broswer*/
+    min-height: 100%;						/*min height for modern broswer*/
+    height: 100%;							/*height for old broswer*/
+    margin: 5px;							/*margin of the web page*/
+    font: 400 15px/1.8 "Lato", sans-serif;	/*font 400 normal char, 15px font size/1.8 line height, font, font family*/
+}
+
+.header{									/*style of the header in all the pages*/
+    position: relative;             		/*element is positioned relative to its normal position*/
+    opacity: 0.85;                  		/*opacity of the header*/
+    background-image: url("images/homepage.jpg");
+    min-height: 55%;                		/*set the minimum height*/
+    background-attachment: fixed;   		/*this turn on the parallax effect of the header*/
+    background-position: center;    		/*center the backgroung image*/
+    background-repeat: no-repeat;   		/*no repeating of the image*/
+    background-size: cover;         		/*Resize the background image to cover the entire container*/
+    overflow: hidden; 						/*not visible during overflow*/
+}
+
+.userheader{								/*style of the user header */
+    position: relative;             
+    opacity: 0.85;                  
+    background-image: url("images/userhomepage2.jpg");
+    min-height: 55%;                
+    background-attachment: fixed;    
+    background-position: center;    
+    background-repeat: no-repeat;   
+    background-size: cover;         
+    overflow: hidden; 
+}
+
+
+.hometitle{
+    position: absolute;             		/*element is positioned relative to its first positioned ancestor element*/
+    left: 0;                        		/*Sets the left margin edge for the positioned box*/
+    top: 50%;                       		/*Sets the top margin edge for the positioned box*/
+    width: 100%;                    		/*sets the width of the element*/
+    text-align: center;            			/*alignment of the text*/
+}
+
+.hometitle span.border{             		/*span border for all the page title*/
+    background-color: #4CAF50;      		/*green background color*/
+    color:#ffffff;                  		/*white text color*/
+    padding: 20px;                  		/*generate space araund the text*/
+    font-size: 25px;                		/*size of the font*/
+    letter-spacing: 10px;           		/*space between letters*/
+}
+	
+.hometitle span.innerborder{        		/*span innerborder for user personal page second title*/
+    background-color: #4CAF50;      
+    color:#ffffff;                  
+    padding: 15px;                  
+    font-size: 16px;                
+    letter-spacing: 8px;            
+}
+
+.content{									/*style of the box that contain left sidebar and main section*/
+    min-height: 100%;						/*minimum height of the box = 100%, for modern browser*/
+    height: auto !important;				/*automatic set heights in pixels, for modern broswer*/
+    height: 100%;							/*set height for old broser*/
+    margin: 0 auto;							/* set margin top=0, the other automatic*/
+    position: relative;						/*relative to its normal position */
+}
+
+.leftsidebar{
+    width: 200px;							/*width of the left menu*/
+    float:left;								/*element is flated left*/
+    height: 100%; 							/*height of the menu*/
+    position: absolute;						/*positioned relative to the nearest positioned ancestor*/
+    background-color: #4CAF50;				/*background color = green*/
+    opacity:0.90;							/*set opacity to 0.9*/
+    overflow:hidden;						/*not visible during overflow*/
+    padding-top: 0px;						/*no padding on the top*/
+ 
+}
+
+.leftsidebar a{
+    padding: 6px 8px 6px 16px;				/*padding for each element of the menu, top right bottom left*/
+    text-decoration: none;					/*no text decoration */
+    font-size: 20px;						/*size of the font*/
+    color: #ffffff;							/*white color*/
+    display: block;							/*display each element as a block, start a new line*/
+}
+
+.leftsidebar a:first-child{
+    padding-top: 30px; 						/*set the first block distance from teh top to 30px instead of 6*/
+}
+
+.leftsidebar a:hover{
+    background-color: #0D5605;				/*on hover a dark green color*/
+}
+
+.mainsection{
+    margin-left: 200px; 					/*translated main section, same as the width of the leftsidebar */
+    font-size: 15px;				
+    height: 100%; 
+    position: relative; 
+    color: #777777;
+    padding: 20px ;
+    text-align:justify;
+    background-color:white;
+}
+
+.selectsection select {						/*style of the select section for the booking operation*/
+    width:100%;	
+    padding: 15px;
+    margin: 5px 0;
+    display: inline-block;			
+    box-sizing: border-box; 
+    border: 1px solid #cccccc;
+    font-size: 16px;
+    line-height:1;
+    overflow: hidden;
+    font-size: 16px;
+    box-shadow: 1px 2px 5px #CECECE;
+}
+
+input[type=text], input[type=password] {	/*full width input fields*/
+    width: 100%;							
+    padding: 15px;
+    margin: 0px 0 22px 0; 
+    display: inline-block;					/*element is formatted as an inline element*/
+    border: none;							/*no border*/
+    background: #f1f1f1;
+    box-sizing: border-box; 				/*width and height properties includes content, padding and border*/
+}
+
+input[type=text]:focus, input[type=password]:focus {	/*style the focus of input type*/
+    background-color: #dddddd;
+    outline: none;							/*no line around element*/
+}
+
+input[type=submit]{							/*style the submit button*/
+    width: 100%;
+    padding:15px; 
+    color: white;
+    margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    background: #4CAF50;
+    opacity: 0.9; 
+}
+
+input[type=submit]:hover{					/*set hover style for submit button*/
+    opacity: 1;
+}
+
+hr {										/*line separator style*/
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+button {									/*style for all the cancel button*/
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    margin: 8px 0 ;
+    border: none;
+    cursor: pointer;						/*the cursor is a pointer and indicates a link*/
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {								/*set the hover for cancel buttons*/
+    opacity:1;
+}
+
+.container {								/*add padding and shadow to container element, for access, abot and delete*/					
+    width:400px;
+    margin: auto; 
+    box-shadow: 5px 10px 18px #888888;
+    padding: 16px;
+}
+
+.container a:hover{							/*set the hover for the element that are referenced in the container box*/
+	color: #4CAF50;	
+}
+
+.footer {									/*style for the footer element*/
+    position:relative; 
+    margin-bottom: 10px; 
+    padding: 3px;
+    color: #c6c6c6;
+    background-color: #F2F2F2;
+    text-align: center;
+    overflow: hidden; 
+}
+
+.footer a{									/*set color for element referenced in the footer*/ 
+    color: #c6c6c6;
+}
+
+.footer a:hover{							/*set hover color for a element in the footer*/
+    color: #4CAF50;
+}
+
+.alert {									/*style for alert*/
+    padding: 5px;
+    background-color: #DBC234;
+    color: white;
+}
+
+
+
+
+
