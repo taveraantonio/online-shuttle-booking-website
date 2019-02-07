@@ -1,5 +1,6 @@
 # Online Shared Shuttle Booking Website
 What is developed is a website for managing online booking of a shared shuttle for people transportation.
+This code is developed for the Distributed Programming I course held at the Politecnico of Torino
 
 ## How it Works
 For know how the website is developed see the "HowItWorks" file in the source folder.
