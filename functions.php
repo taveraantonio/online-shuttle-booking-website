@@ -21,8 +21,8 @@ function sanitizeString($string)
 //////CONNECT TO DATABASE /////////
 ///////////////////////////////////
 function dbConnect() {
-    $conn = mysqli_connect("localhost", "root", "", "s243869");
-	//$conn = mysqli_connect("localhost", "s243869", "", "s243869");
+    $conn = mysqli_connect("localhost", "root", "", "shuttle_database");
+
     if(!$conn){
         die('Errore nella connessione (' . mysqli_connect_errno() . '): ' . mysqli_connect_error());
     }
